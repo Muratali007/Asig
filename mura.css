@@ -1,0 +1,29 @@
+.bbcd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+  grid-auto-flow: dense;
+}
+
+.bbcd:nth-child(31n + 1) {
+  grid-column: 1 / -1;
+}
+.bbcd:nth-child(16n + 2) {
+  grid-column: -3 / -1;
+}
+.bbcd:nth-child(16n + 10) {
+  grid-column: 1 / -2;
+}
+
+@media (max-width: 459px) {
+  .bbcd {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container3 img{
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
